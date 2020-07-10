@@ -1,7 +1,8 @@
 {
-  "name": "poc-xstate-react",
+  "name": "poc-react-xstate",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://toutpt.github.io/poc-react-xstate",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
