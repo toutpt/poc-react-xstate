@@ -1,23 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Fetch } from './Fetch';
 
 function App() {
+  const [state, setState] = React.useState(true);
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          The goal here is to test X-State with fetch and see how we can handle complex scenarios
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <button onClick={() => setState(!state)}>Toggle</button>
+        {state && <Fetch url="https://cat-fact.herokuapp.com" />}
       </header>
     </div>
   );
